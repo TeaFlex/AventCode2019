@@ -9,13 +9,19 @@ namespace Avent_du_code_2019
 {
     class Day
     {
-        protected string path = "C:\\Users\\Nicolas\\Desktop\\AventFile2019";
+        protected string path = "C:\\AventFile2019";
         protected List<string> puzzleinput = new List<string>();
+        protected List<int> puzzleinputINT = new List<int>();
 
-        public void Read_file(string filename)
+        public string Path { get => path; }
+
+        public virtual void Read_file(string filename)
         {
-            path = path + "//" + filename;
+            if (!Directory.Exists(path))
+                return;
+            path = path + "\\" + filename;
             puzzleinput = File.ReadAllLines(path).ToList();
         }
+
     }
 }

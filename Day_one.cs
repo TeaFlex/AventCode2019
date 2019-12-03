@@ -12,7 +12,7 @@ namespace Avent_du_code_2019
         private int sum = 0;
         public Day_one()
         {
-            path += "\\day_one";
+            path += "\\day1";
             Read_file("dayonemass.txt");
         }
         public int Puzzle1()

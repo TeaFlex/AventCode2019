@@ -4,3 +4,9 @@ D:\PERSO\C#\Avent_du_code_2019\bin\Debug\Avent_du_code_2019.exe
 D:\PERSO\C#\Avent_du_code_2019\bin\Debug\Avent_du_code_2019.pdb
 D:\PERSO\C#\Avent_du_code_2019\obj\Debug\Avent_du_code_2019.exe
 D:\PERSO\C#\Avent_du_code_2019\obj\Debug\Avent_du_code_2019.pdb
+D:\Ecole\Programmation\C#\Nouveau dossier\AventCode2019\bin\Debug\Avent_du_code_2019.exe.config
+D:\Ecole\Programmation\C#\Nouveau dossier\AventCode2019\bin\Debug\Avent_du_code_2019.exe
+D:\Ecole\Programmation\C#\Nouveau dossier\AventCode2019\bin\Debug\Avent_du_code_2019.pdb
+D:\Ecole\Programmation\C#\Nouveau dossier\AventCode2019\obj\Debug\Avent_du_code_2019.csprojAssemblyReference.cache
+D:\Ecole\Programmation\C#\Nouveau dossier\AventCode2019\obj\Debug\Avent_du_code_2019.exe
+D:\Ecole\Programmation\C#\Nouveau dossier\AventCode2019\obj\Debug\Avent_du_code_2019.pdb
