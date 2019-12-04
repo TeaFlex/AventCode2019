@@ -15,37 +15,27 @@ namespace Avent_du_code_2019
             Read_file("valuesdaytwo.txt");
         }
 
-        public string Puzzle1()
+        public int Puzzle1()
         {
-            int pos = 0;
             puzzleinputINT[1] = 12;
             puzzleinputINT[2] = 2;
-            List<int> resultlist = new List<int>();
-            for (int i = 0; i <= puzzleinputINT.Count - 1; i++)
-                resultlist.Add(0);
-            foreach(int num in puzzleinputINT)
+            for(int pos=0; pos<puzzleinputINT.Count; pos++)
             {
-                switch (num)
+                switch (puzzleinputINT[pos])
                 {
                     case 1:
-                        resultlist[puzzleinputINT[pos + 3]] = puzzleinputINT[puzzleinputINT[pos + 1]] + puzzleinputINT[puzzleinputINT[pos + 2]];
+                        puzzleinputINT[puzzleinputINT[pos + 3]] = puzzleinputINT[puzzleinputINT[pos + 1]] + puzzleinputINT[puzzleinputINT[pos + 2]];
                         break;
                     case 2:
-                        resultlist[puzzleinputINT[pos + 3]] = puzzleinputINT[puzzleinputINT[pos + 1]] * puzzleinputINT[puzzleinputINT[pos + 2]];
+                        puzzleinputINT[puzzleinputINT[pos + 3]] = puzzleinputINT[puzzleinputINT[pos + 1]] * puzzleinputINT[puzzleinputINT[pos + 2]];
                         break;
-                    case 99:
-                        string result = "";
-                        foreach(int n in resultlist)
-                        {
-                            result += n +",";
-                        }
-                        return result;
+                    case 99:   
+                        return puzzleinputINT[0];
                     default:
                         break;
                 } 
-                pos++;
             }
-            return "empty";
+            return -1;
         }
 
         public override void Read_file(string filename)

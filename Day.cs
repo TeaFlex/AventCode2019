@@ -20,7 +20,8 @@ namespace Avent_du_code_2019
             if (!Directory.Exists(path))
                 return;
             path = path + "\\" + filename;
-            puzzleinput = File.ReadAllLines(path).ToList();
+            if(File.Exists(path))
+                puzzleinput = File.ReadAllLines(path).ToList();
         }
 
     }
