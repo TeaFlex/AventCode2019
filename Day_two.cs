@@ -42,21 +42,12 @@ namespace Avent_du_code_2019
         {
             if (!Directory.Exists(path))
                 return;
-            path = path + "\\" + filename;
-            string text = File.ReadAllText(path);
-            string word = "";
-            foreach(char carac in text)
+            string[] tab = File.ReadAllText(path + "\\" + filename).Split(',');
+            
+            foreach(string word in tab)
             {
-                if(carac == ',')
-                {
-                    if (Int32.TryParse(word, out int number))
-                    {
-                        puzzleinputINT.Add(number);
-                    }
-                    word = "";
-                }
-                else
-                    word += carac;
+                if (Int32.TryParse(word, out int number))
+                    puzzleinputINT.Add(number);               
             }
         }
     }
