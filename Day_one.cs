@@ -13,9 +13,10 @@ namespace Avent_du_code_2019
         public Day_one()
         {
             path += "\\day1";
-            Read_file("dayonemass.txt");
+            file = "dayonemass.txt";
+            Read_file(file);
         }
-        public int Puzzle1()
+        public override int Puzzle1()
         {       
             foreach(string mass in puzzleinput)
             {
@@ -31,7 +32,7 @@ namespace Avent_du_code_2019
             return sum;
         }
 
-        public int Puzzle2()
+        public override int Puzzle2()
         {
             foreach(string mass in puzzleinput)
             {
@@ -54,6 +55,13 @@ namespace Avent_du_code_2019
                 sum += num;
                 Calculate(num);
             }
+        }
+
+        public override void Read_file(string filename)
+        {
+            base.Read_file(filename);
+            if (File.Exists(path))
+                puzzleinput = File.ReadAllLines(path).ToList();
         }
     }
 }

@@ -12,16 +12,14 @@ namespace Avent_du_code_2019
         static void Main(string[] args)
         {
             FileControl();
-            Console.WriteLine("Day 1:");
-            Console.WriteLine("Puzzle1: " + new Day_one().Puzzle1());
-            Console.WriteLine("Puzzle2: " + new Day_one().Puzzle2());
+            Console.WriteLine("Day 1 :");
+            Console.WriteLine("Puzzle 1: " + new Day_one().Puzzle1());
+            Console.WriteLine("Puzzle 2: " + new Day_one().Puzzle2() + "\n");
             Console.ReadLine();
-
-            Console.WriteLine("Day 2:");
-            Console.WriteLine("Puzzle1: " + new Day_two().Puzzle1());
-            //Console.WriteLine("Puzzle2: " + new Day_one().Puzzle2());
+            Console.WriteLine("Day 2 :");
+            Console.WriteLine("Puzzle 1: " + new Day_two().Puzzle1());
+            Console.WriteLine("Puzzle 2: " + new Day_two().Puzzle2() + "\n");
             Console.ReadLine();
-
         }
 
         static void FileControl()
