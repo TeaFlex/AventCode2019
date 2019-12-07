@@ -9,11 +9,12 @@ namespace Avent_du_code_2019
 {
     class Day_two : Day
     {
+        private List<int> copiedlistofinput;
         public Day_two()
         {
-            path += "\\day2";
-            file = "valuesdaytwo.txt";
+            file = "daytwoinput.txt";
             Read_file(file);
+            copiedlistofinput = puzzleinputINT.ToList();
         }
 
         public override int Puzzle1()
@@ -30,7 +31,7 @@ namespace Avent_du_code_2019
                     if (Intcomputer(noun, verb) == 19690720)
                         return noun * 100 + verb;
                     else
-                        Read_file(file);
+                        puzzleinputINT = copiedlistofinput.ToList();
                 }
             }
             return -1;

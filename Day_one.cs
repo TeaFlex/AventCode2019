@@ -12,8 +12,7 @@ namespace Avent_du_code_2019
         private int sum = 0;
         public Day_one()
         {
-            path += "\\day1";
-            file = "dayonemass.txt";
+            file = "dayoneinput.txt";
             Read_file(file);
         }
         public override int Puzzle1()
