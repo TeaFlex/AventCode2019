@@ -26,6 +26,10 @@ namespace Avent_du_code_2019
             Console.WriteLine("Puzzle 1: " + new Day_three().Puzzle1());
             Console.WriteLine("Puzzle 2: " + new Day_three().Puzzle2() + "\n");
             Console.ReadLine();
+            Console.WriteLine("Day 4 :");
+            Console.WriteLine("Puzzle 1: " + new Day_four().Puzzle1());
+            Console.WriteLine("Puzzle 2: " + new Day_four().Puzzle2() + "\n");
+            Console.ReadLine();
             Console.Clear();
         }
 
